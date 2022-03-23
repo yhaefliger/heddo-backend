@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.settings
+    - field.storage.config_pages.field_default_header
+    - media.type.image
+id: config_pages.settings.field_default_header
+field_name: field_default_header
+entity_type: config_pages
+bundle: settings
+label: 'Default Header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

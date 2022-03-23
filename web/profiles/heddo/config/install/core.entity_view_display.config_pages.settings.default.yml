@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.settings
+    - field.field.config_pages.settings.field_default_header
+    - field.field.config_pages.settings.field_primary_color
+  module:
+    - color_field
+id: config_pages.settings.default
+targetEntityType: config_pages
+bundle: settings
+mode: default
+content:
+  field_default_header:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_primary_color:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

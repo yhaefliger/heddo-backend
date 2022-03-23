@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.settings
+    - field.storage.config_pages.field_primary_color
+  module:
+    - color_field
+id: config_pages.settings.field_primary_color
+field_name: field_primary_color
+entity_type: config_pages
+bundle: settings
+label: 'Primary Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

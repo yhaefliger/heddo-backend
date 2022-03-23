@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: settings
+label: Settings
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/config/site
+  weight: 0
+  description: Site

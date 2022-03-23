@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_text.field_test
+    - paragraphs.paragraphs_type.title_text
+id: paragraph.title_text.default
+targetEntityType: paragraph
+bundle: title_text
+mode: default
+content:
+  field_test:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+    - graphql
+    - media
+    - system
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'bypass graphql field security'
+  - 'execute graphql requests'
+  - 'view config_pages entity'
+  - 'view media'

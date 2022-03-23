@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.settings
+    - field.field.config_pages.settings.field_default_header
+    - field.field.config_pages.settings.field_primary_color
+  module:
+    - color_field
+    - media_library
+id: config_pages.settings.default
+targetEntityType: config_pages
+bundle: settings
+mode: default
+content:
+  field_default_header:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_primary_color:
+    type: color_field_widget_html5
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  label: true

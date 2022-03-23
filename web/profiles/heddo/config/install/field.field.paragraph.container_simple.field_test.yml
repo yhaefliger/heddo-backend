@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_test
+    - paragraphs.paragraphs_type.container_simple
+id: paragraph.container_simple.field_test
+field_name: field_test
+entity_type: paragraph
+bundle: container_simple
+label: Test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

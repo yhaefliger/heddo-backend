@@ -1,0 +1,9 @@
+first_day: 0
+country:
+  default: CH
+timezone:
+  default: Europe/Zurich
+  user:
+    configurable: true
+    default: 0
+    warn: false

@@ -1,0 +1,58 @@
+name: Heddo
+type: profile
+description: 'Default backend configuration and modules for Heddo'
+core_version_requirement: '^8.8 || ^9'
+following:
+  install:
+    theme: gin
+install:
+  - block
+  - breakpoint
+  - ckeditor5
+  - color_field
+  - config
+  - config_pages
+  - crop
+  - ctools
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - entity_reference_revisions
+  - field
+  - field_ui
+  - file
+  - filter
+  - focal_point
+  - gin_login
+  - gin_toolbar
+  - graphql
+  - graphql_core
+  - graphql_metatag
+  - image
+  - layout_discovery
+  - layout_paragraphs
+  - link
+  - media
+  - media_library
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - node
+  - page_cache
+  - path
+  - path_alias
+  - serialization
+  - shortcut
+  - system
+  - text
+  - token
+  - toolbar
+  - user
+  - pathauto
+  - views
+  - paragraphs
+dependencies:
+  - node
+  - block
+themes:
+  - gin

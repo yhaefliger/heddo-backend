@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.ckeditor
+  module:
+    - ckeditor5
+format: ckeditor
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - link
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - '|'
+      - bulletedList
+      - numberedList
+      - blockQuote
+      - '|'
+      - alignment
+      - horizontalLine
+      - '|'
+      - indent
+      - outdent
+      - '|'
+      - undo
+      - redo
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+image_upload: {  }
