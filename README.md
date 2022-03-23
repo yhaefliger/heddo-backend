@@ -1,4 +1,4 @@
-# ッ Heddo - Bakend
+# ッ Heddo - Backend
 Headless CMS solution with Drupal+Graphql as backend and Next.js for the frontend.
 
 
