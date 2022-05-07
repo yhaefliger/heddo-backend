@@ -5,8 +5,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
     - field.field.node.page.field_content
-    - field.field.node.page.field_edit
     - field.field.node.page.field_header
+    - field.field.node.page.field_meta_tags
     - node.type.page
   module:
     - text
@@ -31,5 +31,5 @@ content:
     region: content
 hidden:
   field_content: true
-  field_edit: true
   field_header: true
+  field_meta_tags: true

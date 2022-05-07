@@ -34,9 +34,13 @@ install:
   - link
   - media
   - media_library
+  - media_library_edit
   - menu_link_content
   - menu_ui
   - metatag
+  - metatag_facebook
+  - metatag_open_graph
+  - metatag_twitter_cards
   - node
   - page_cache
   - path

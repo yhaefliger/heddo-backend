@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_test
+    - field.storage.paragraph.field_classes
     - paragraphs.paragraphs_type.container_simple
-id: paragraph.container_simple.field_test
-field_name: field_test
+id: paragraph.container_simple.field_classes
+field_name: field_classes
 entity_type: paragraph
 bundle: container_simple
-label: Test
-description: ''
+label: Classes
+description: 'Extra css classes'
 required: false
 translatable: false
 default_value: {  }

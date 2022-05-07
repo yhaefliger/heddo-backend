@@ -2,16 +2,35 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.title_text.field_test
+    - field.field.paragraph.title_text.field_subtitle
+    - field.field.paragraph.title_text.field_text
+    - field.field.paragraph.title_text.field_title
     - paragraphs.paragraphs_type.title_text
+  module:
+    - text
 id: paragraph.title_text.default
 targetEntityType: paragraph
 bundle: title_text
 mode: default
 content:
-  field_test:
+  field_subtitle:
     type: string
-    label: above
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }

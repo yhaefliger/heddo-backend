@@ -4,11 +4,12 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_content
-    - field.field.node.page.field_edit
     - field.field.node.page.field_header
+    - field.field.node.page.field_meta_tags
     - node.type.page
   module:
     - entity_reference_revisions
+    - metatag
     - text
     - user
 id: node.page.default
@@ -32,13 +33,6 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
-  field_edit:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
-    region: content
   field_header:
     type: entity_reference_entity_view
     label: above
@@ -47,6 +41,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
     region: content
   links:
     settings: {  }

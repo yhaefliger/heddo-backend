@@ -2,14 +2,34 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.title_text.field_test
+    - field.field.paragraph.title_text.field_subtitle
+    - field.field.paragraph.title_text.field_text
+    - field.field.paragraph.title_text.field_title
     - paragraphs.paragraphs_type.title_text
+  module:
+    - text
 id: paragraph.title_text.default
 targetEntityType: paragraph
 bundle: title_text
 mode: default
 content:
-  field_test:
+  field_subtitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
     type: string_textfield
     weight: 0
     region: content

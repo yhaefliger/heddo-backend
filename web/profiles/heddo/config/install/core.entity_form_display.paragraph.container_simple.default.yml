@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.container_simple.field_test
+    - field.field.paragraph.container_simple.field_classes
     - paragraphs.paragraphs_type.container_simple
 id: paragraph.container_simple.default
 targetEntityType: paragraph
 bundle: container_simple
 mode: default
 content:
-  field_test:
+  field_classes:
     type: string_textfield
     weight: -199
     region: content
