@@ -22,7 +22,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
-        "drupal/ctools": "^3.7",
+        "drupal/ctools": "^4.0",
         "drupal/focal_point": "^1.5",
         "drupal/gin": "^3.0",
         "drupal/gin_login": "^1.0",
@@ -40,7 +40,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "patches": {
